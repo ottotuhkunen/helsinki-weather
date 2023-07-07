@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="mainSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1106.5 787.8" style="enable-background:new 0 0 1106.5 787.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B5B5B5;}
+	.st1{display:none;}
+	.st2{display:inline;fill:#B5B5B5;}
+	.st3{fill:#2C393D;}
+	.st4{fill:#DADADA;}
+	.st5{fill:#B9B8BA;}
+	.st6{font-family:'Verdana';}
+	.st7{font-size:20px;}
+	.st8{font-size:29px;}
+	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st10{fill:#D80000;}
+	.st11{font-size:15px;}
+	.st12{enable-background:new    ;}
+	.st13{fill:#515151;}
+	.st14{font-size:14px;}
+	.st15{fill:none;stroke:#B5B5B5;stroke-miterlimit:10;}
+	.st16{display:none;fill:#F09B36;stroke:#000000;stroke-miterlimit:10;}
+	.st17{display:none;fill:#4397C3;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<rect id="rwy04L" x="48.8" y="301.2" transform="matrix(0.6456 -0.7637 0.7637 0.6456 -165.5583 314.2452)" class="st0" width="413.9" height="68.6"/>
+<rect id="rwy04R" x="361.9" y="301.2" transform="matrix(0.6456 -0.7637 0.7637 0.6456 -54.6154 553.306)" class="st0" width="413.9" height="68.6"/>
+<rect id="rwy15" x="630.2" y="127.5" transform="matrix(0.866 -0.5 0.5 0.866 -78.1958 377.0531)" class="st0" width="68.6" height="413.9"/>
+<g id="bringToFront04R22L" class="st1">
+	
+		<rect id="rwy04R_00000064318590864677109300000005770033707629665199_" x="361.9" y="301.2" transform="matrix(0.6456 -0.7637 0.7637 0.6456 -54.6154 553.306)" class="st2" width="413.9" height="68.6"/>
+</g>
+<g id="windDisplays">
+	<g id="windDisp22R">
+		<rect x="184.1" y="5" class="st3" width="157.3" height="109.2"/>
+		<path id="display22R" class="st4" d="M335.7,112.4H189.8c-2.2,0-3.9-1.8-3.9-3.9V11c0-2.2,1.8-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.7,3.9,3.9v97.5C339.6,110.7,337.9,112.4,335.7,112.4z"/>
+		<text id="_x32_2R_x5F_maxDir" transform="matrix(1 0 0 1 189.2582 32.16)" class="st5 st6 st7">//</text>
+		<text id="_x32_2R_x5F_components" transform="matrix(1 0 0 1 190.6661 101.2776)" class="st5 st6 st7">//</text>
+		<text id="_x32_2R_x5F_minSpd" transform="matrix(1 0 0 1 313.8359 101.2777)" class="st5 st6 st7">//</text>
+		<text id="_x32_2R_x5F_maxSpd" transform="matrix(1 0 0 1 313.8359 32.1601)" class="st5 st6 st7">//</text>
+		<text id="_x32_2R_x5F_windSpd" transform="matrix(1 0 0 1 305.6621 69.2345)" class="st5 st6 st8">//</text>
+		<text id="_x32_2R_x5F_windDir" transform="matrix(1 0 0 1 190.666 69.2345)" class="st5 st6 st8">//</text>
+		<text id="_x32_2R_x5F_number" transform="matrix(-0.7637 -0.6456 0.6456 -0.7637 405.5834 202.6689)" class="st4 st6 st8">22R</text>
+	</g>
+	<g id="windDisp15">
+		<rect x="534" y="5.2" class="st3" width="157.3" height="109.1"/>
+		<path id="display15" class="st4" d="M685.6,112.5H539.7c-2.2,0-3.9-1.8-3.9-3.9V11.1c0-2.2,1.8-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.8,3.9,3.9v97.5C689.5,110.8,687.8,112.5,685.6,112.5z"/>
+		<text id="_x31_5_x5F_maxDir" transform="matrix(1 0 0 1 539.1749 32.2923)" class="st5 st6 st7">//</text>
+		<text id="_x31_5_x5F_components" transform="matrix(1 0 0 1 540.5828 101.41)" class="st5 st6 st7">//</text>
+		<text id="_x31_5_x5F_minSpd" transform="matrix(1 0 0 1 663.8359 101.41)" class="st5 st6 st7">//</text>
+		<text id="_x31_5_x5F_maxSpd" transform="matrix(1 0 0 1 663.8359 32.2924)" class="st5 st6 st7">//</text>
+		<text id="_x31_5_x5F_windSpd" transform="matrix(1 0 0 1 655.6621 69.3669)" class="st5 st6 st8">//</text>
+		<text id="_x31_5_x5F_windDir" transform="matrix(1 0 0 1 540.5827 69.3669)" class="st5 st6 st8">//</text>
+		<text id="_x31_5_x5F_number" transform="matrix(-0.866 0.5 -0.5 -0.866 583.3936 154.5063)" class="st4 st6 st8">15</text>
+	</g>
+	<g id="windDisp22L">
+		<rect x="865.6" y="114.3" class="st3" width="157.3" height="109.1"/>
+		<path id="display22L" class="st4" d="M1017.2,221.7H871.3c-2.2,0-3.9-1.8-3.9-3.9v-97.5c0-2.2,1.8-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.8,3.9,3.9v97.5C1021.1,219.9,1019.4,221.7,1017.2,221.7z"/>
+		<text id="_x32_2L_x5F_maxDir" transform="matrix(1 0 0 1 870.7602 141.4394)" class="st5 st6 st7">//</text>
+		<text id="_x32_2L_x5F_components" transform="matrix(1 0 0 1 872.1681 210.557)" class="st5 st6 st7">//</text>
+		<text id="_x32_2L_x5F_minSpd" transform="matrix(1 0 0 1 995.8359 210.5571)" class="st5 st6 st7">//</text>
+		<text id="_x32_2L_x5F_maxSpd" transform="matrix(1 0 0 1 995.8359 141.4395)" class="st5 st6 st7">//</text>
+		<text id="_x32_2L_x5F_windSpd" transform="matrix(1 0 0 1 987.6621 178.5139)" class="st5 st6 st8">//</text>
+		<text id="_x32_2L_x5F_windDir" transform="matrix(1 0 0 1 872.168 178.5139)" class="st5 st6 st8">//</text>
+		<text id="_x32_2L_x5F_number" transform="matrix(-0.7637 -0.6456 0.6456 -0.7637 717.7612 200.2372)" class="st4 st6 st8">22L</text>
+	</g>
+	<g id="windDisp33">
+		<rect x="944.2" y="387.7" class="st3" width="157.3" height="109.1"/>
+		<path id="display33" class="st4" d="M1095.8,495H949.9c-2.2,0-3.9-1.8-3.9-3.9v-97.5c0-2.2,1.8-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.8,3.9,3.9v97.5C1099.8,493.3,1098,495,1095.8,495z"/>
+		<text id="_x33_3_x5F_maxDir" transform="matrix(1 0 0 1 949.3926 414.7924)" class="st5 st6 st7">//</text>
+		<text id="_x33_3_x5F_components" transform="matrix(1 0 0 1 950.8004 483.91)" class="st5 st6 st7">//</text>
+		<text id="_x33_3_x5F_minSpd" transform="matrix(1 0 0 1 1074.8359 483.91)" class="st5 st6 st7">//</text>
+		<text id="_x33_3_x5F_maxSpd" transform="matrix(1 0 0 1 1074.8359 414.7924)" class="st5 st6 st7">//</text>
+		<text id="_x33_3_x5F_windSpd" transform="matrix(1 0 0 1 1066.6621 451.8669)" class="st5 st6 st8">//</text>
+		<text id="_x33_3_x5F_windDir" transform="matrix(1 0 0 1 950.8004 451.8669)" class="st5 st6 st8">//</text>
+		<text id="_x33_3_x5F_number" transform="matrix(0.866 -0.5 0.5 0.866 748.8816 515.6631)" class="st4 st6 st8">33</text>
+	</g>
+	<g id="windDisp04R">
+		<rect x="510.1" y="516.1" class="st3" width="157.3" height="109.2"/>
+		<path id="display04R" class="st4" d="M661.7,623.5H515.8c-2.2,0-3.9-1.8-3.9-3.9v-97.5c0-2.2,1.7-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.8,3.9,3.9v97.5C665.6,621.8,663.9,623.5,661.7,623.5z"/>
+		<text id="_x30_4R_x5F_maxDir" transform="matrix(1 0 0 1 515.2562 543.2629)" class="st5 st6 st7">//</text>
+		<text id="_x30_4R_x5F_components" transform="matrix(1 0 0 1 516.6641 612.3806)" class="st5 st6 st7">//</text>
+		<text id="_x30_4R_x5F_minSpd" transform="matrix(1 0 0 1 641.8359 612.3806)" class="st5 st6 st7">//</text>
+		<text id="_x30_4R_x5F_maxSpd" transform="matrix(1 0 0 1 641.8359 543.263)" class="st5 st6 st7">//</text>
+		<text id="_x30_4R_x5F_windSpd" transform="matrix(1 0 0 1 633.6621 580.3375)" class="st5 st6 st8">//</text>
+		<text id="_x30_4R_x5F_windDir" transform="matrix(1 0 0 1 516.6639 580.3375)" class="st5 st6 st8">//</text>
+		<text id="_x30_4R_x5F_number" transform="matrix(0.7663 0.6425 -0.6425 0.7663 419.1324 468.4684)" class="st4 st6 st8">04R</text>
+	</g>
+	<g id="windDisp04L">
+		<rect x="184.1" y="516.1" class="st3" width="157.3" height="109.2"/>
+		<path id="display04L" class="st4" d="M335.7,623.5H189.8c-2.2,0-3.9-1.8-3.9-3.9v-97.5c0-2.2,1.8-3.9,3.9-3.9h145.9
+			c2.2,0,3.9,1.8,3.9,3.9v97.5C339.6,621.8,337.9,623.5,335.7,623.5z"/>
+		<text id="_x30_4L_x5F_maxDir" transform="matrix(1 0 0 1 189.2582 543.2629)" class="st5 st6 st7">//</text>
+		<text id="_x30_4L_x5F_components" transform="matrix(1 0 0 1 190.6661 612.3806)" class="st5 st6 st7">//</text>
+		<text id="_x30_4L_x5F_minSpd" transform="matrix(1 0 0 1 313.8359 612.3806)" class="st5 st6 st7">//</text>
+		<text id="_x30_4L_x5F_maxSpd" transform="matrix(1 0 0 1 313.8359 543.263)" class="st5 st6 st7">//</text>
+		<text id="_x30_4L_x5F_windSpd" transform="matrix(1 0 0 1 305.6621 580.3375)" class="st5 st6 st8">//</text>
+		<text id="_x30_4L_x5F_windDir" transform="matrix(1 0 0 1 190.666 580.3375)" class="st5 st6 st8">//</text>
+		<text id="_x30_4L_x5F_number" transform="matrix(0.7663 0.6425 -0.6425 0.7663 106.837 470.1751)" class="st4 st6 st8">04L</text>
+	</g>
+</g>
+<g id="windArrows">
+	<polygon id="arrow22R" class="st9" points="234.2,129.8 257.9,160.3 246.8,160.3 246.8,227.3 234.2,227.3 221.9,227.3 221.9,160.2 
+		210.5,160.2 	"/>
+	<polygon id="arrow15" class="st9" points="471.4,63.7 495.1,94.2 483.9,94.2 483.9,161.2 471.4,161.2 459.1,161.2 459.1,94.1 
+		447.6,94.1 	"/>
+	<polygon id="arrow22L" class="st9" points="792.5,112.4 816.2,143 805.1,143 805.1,209.9 792.5,209.9 780.2,209.9 780.2,142.8 
+		768.8,142.8 	"/>
+	<polygon id="arrow33" class="st9" points="872.1,399.9 895.8,430.5 884.7,430.5 884.7,497.4 872.1,497.4 859.8,497.4 859.8,430.3 
+		848.4,430.3 	"/>
+	<polygon id="arrow04R" class="st9" points="433.2,539.6 456.9,570.2 445.8,570.2 445.8,637.2 433.2,637.2 420.9,637.2 420.9,570 
+		409.5,570 	"/>
+	<polygon id="arrow04L" class="st9" points="98.9,536.5 122.6,567 111.5,567 111.5,634 98.9,634 86.6,634 86.6,566.9 75.2,566.9 	
+		"/>
+</g>
+<g id="warningWindow">
+	<rect id="warningbox" x="4.6" y="654.3" class="st9" width="499.1" height="111.5"/>
+	<text transform="matrix(1 0 0 1 219.3946 757.4055)" class="st10 st6 st11">MET WARNINGS EXIST</text>
+</g>
+<g id="lvpWindow">
+	<rect id="LVPbox" x="749.3" y="625.3" class="st9" width="343.5" height="111.5"/>
+	<text transform="matrix(1 0 0 1 761.2416 649.9836)" class="st6 st11">ALOITETTU LVP VALMISTELUT</text>
+</g>
+<g id="infoWindow">
+	<rect id="infoWindowBox2" x="749.3" y="7.9" class="st9" width="343.5" height="96.5"/>
+	<text id="infoWindowText2" transform="matrix(1 0 0 1 761.2416 32.5886)" class="st12"><tspan x="0" y="0" class="st6 st11">RNP 15/33 N/A </tspan><tspan x="0" y="18" class="st6 st11">LVP + CAT2/3 N/A</tspan></text>
+</g>
+<g id="infoWindow04L">
+	<rect id="infoWindowBox1" x="4.6" y="233" class="st9" width="202.2" height="96.5"/>
+	<text id="infoWindowText1" transform="matrix(1 0 0 1 16.5416 257.748)" class="st12"><tspan x="0" y="0" class="st6 st11">ECFMP SÄÄTELY: </tspan><tspan x="0" y="18" class="st6 st11">DEP ESSA MDI 3MIN</tspan></text>
+</g>
+<g id="RWYCC_x5F_04L">
+	<text id="_x30_4L_x5F_RWYCC_x5F_3" transform="matrix(1 0 0 1 372.1522 303.1568)" class="st13 st6 st14">6  •</text>
+	<rect id="_x30_4L_x5F_RWYCC_x5F_3_x5F_box" x="355.1" y="286.2" class="st15" width="60.5" height="21.8"/>
+	<text id="_x30_4L_x5F_RWYCC_x5F_2" transform="matrix(1 0 0 1 310.188 374.5832)" class="st13 st6 st14">6  •</text>
+	<rect id="_x30_4L_x5F_RWYCC_x5F_2_x5F_box" x="293.1" y="357.7" class="st15" width="60.5" height="21.8"/>
+	
+		<text id="_x30_4L_x5F_RWYCC_x5F_1_00000131359622108186413040000002610597435818297007_" transform="matrix(1 0 0 1 246.3961 450.3479)" class="st13 st6 st14">6  •</text>
+	
+		<rect id="_x30_4L_x5F_RWYCC_x5F_1_x5F_box_00000129908293207845633180000004036665143402939306_" x="229.3" y="433.4" class="st15" width="60.5" height="21.8"/>
+</g>
+<g id="RWYCC_x5F_04R">
+	<text id="_x30_4R_x5F_RWYCC_x5F_3" transform="matrix(1 0 0 1 597.5308 393.0346)" class="st13 st6 st14">6  •</text>
+	<rect id="_x30_4R_x5F_RWYCC_x5F_3_x5F_box" x="580.5" y="376.1" class="st15" width="60.5" height="21.8"/>
+	<text id="_x30_4R_x5F_RWYCC_x5F_2" transform="matrix(1 0 0 1 562.3544 434.581)" class="st13 st6 st14">6  •</text>
+	<rect id="_x30_4R_x5F_RWYCC_x5F_2_x5F_box" x="545.3" y="417.7" class="st15" width="60.5" height="21.8"/>
+	<text id="_x30_4R_x5F_RWYCC_x5F_1" transform="matrix(1 0 0 1 525.9851 477.3921)" class="st13 st6 st14">6  •</text>
+	<rect id="_x30_4R_x5F_RWYCC_x5F_1_x5F_box" x="508.9" y="460.5" class="st15" width="60.5" height="21.8"/>
+</g>
+<g id="RWYCC_x5F_15">
+	<text id="_x31_5_x5F_RWYCC_x5F_3" transform="matrix(1 0 0 1 775.5638 405.633)" class="st13 st6 st14">6  •</text>
+	<rect id="_x31_5_x5F_RWYCC_x5F_3_x5F_box" x="758.5" y="388.7" class="st15" width="60.5" height="21.8"/>
+	<text id="_x31_5_x5F_RWYCC_x5F_2" transform="matrix(1 0 0 1 745.3137 353.6613)" class="st13 st6 st14">6  •</text>
+	<rect id="_x31_5_x5F_RWYCC_x5F_2_x5F_box" x="728.3" y="336.7" class="st15" width="60.5" height="21.8"/>
+	<text id="_x31_5_x5F_RWYCC_x5F_1" transform="matrix(1 0 0 1 716.0602 302.4469)" class="st13 st6 st14">6  •</text>
+	<rect id="_x31_5_x5F_RWYCC_x5F_1_x5F_box" x="699" y="285.5" class="st15" width="60.5" height="21.8"/>
+</g>
+<g id="trianglesArrival">
+	<polygon id="arr04L" class="st16" points="129.8,529.9 84.9,492.3 118.8,497.4 	"/>
+	<polygon id="arr22R" class="st16" points="382.1,141.1 426.8,178.9 392.9,173.7 	"/>
+	<polygon id="arr22L" class="st16" points="694.8,141.5 739.5,179.3 705.6,174.1 	"/>
+	<polygon id="arr15" class="st16" points="524.7,150.5 575.5,121.2 559,151.4 	"/>
+	<polygon id="arr33" class="st16" points="804.5,518.8 753.8,548.1 770.2,517.9 	"/>
+	<polygon id="arr04R" class="st16" points="442.5,530.3 397.6,492.7 431.5,497.8 	"/>
+</g>
+<g id="trianglesDeparture">
+	<polygon id="dep04R" class="st17" points="489.3,474.9 444.4,437.3 478.4,442.4 	"/>
+	<polygon id="dep04L" class="st17" points="176.1,475.2 131.2,437.5 165.1,442.6 	"/>
+	<polygon id="dep22R" class="st17" points="335.6,195.7 380.5,233.4 346.5,228.3 	"/>
+	<polygon id="dep22L" class="st17" points="649.3,194.9 694.2,232.6 660.2,227.5 	"/>
+	<polygon id="dep33" class="st17" points="767.7,455.1 717,484.4 733.4,454.2 	"/>
+	<polygon id="dep15" class="st17" points="563.2,217.1 613.9,187.8 597.5,218 	"/>
+</g>
+</svg>
