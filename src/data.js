@@ -193,8 +193,8 @@ function getMaxSpeed(roundedGust, roundedWindSpeed, display, font1, font2) {
   var maxGust = roundedGust + 3;
   var maxSpeed = Math.floor(Math.random() * (maxGust - roundedGust) + roundedGust);
 
-  console.log(maxSpeed);
-  console.log(roundedWindSpeed);
+  //console.log(maxSpeed);
+  //console.log(roundedWindSpeed);
 
   if (maxSpeed >= (roundedWindSpeed + 9)) {
     if (document.getElementById(display).style.fill == "white") {
@@ -302,8 +302,146 @@ function setMetarData(xml) {
     document.getElementById("imcVmc").innerHTML = "VMC";
   }
 
-  // if METAR contains RVR
-  // todo
+  // Check if METAR contains RVR:
+
+  var pattern_04L = metar.match(/R04L\/[A-Za-z]?(\d+)/);
+  var pattern_04R = metar.match(/R04R\/[A-Za-z]?(\d+)/);
+  var pattern_15 = metar.match(/R15\/[A-Za-z]?(\d+)/);
+  var pattern_33 = metar.match(/R33\/[A-Za-z]?(\d+)/);
+  var pattern_22L = metar.match(/R22L\/[A-Za-z]?(\d+)/);
+  var pattern_22R = metar.match(/R22R\/[A-Za-z]?(\d+)/);
+
+  // real RVR values stored below:
+  var rvr_04L = pattern_04L ? pattern_04L[1] : null;
+  var rvr_04R = pattern_04R ? pattern_04R[1] : null;
+  var rvr_15 = pattern_15 ? pattern_15[1] : null;
+  var rvr_33 = pattern_33 ? pattern_33[1] : null;
+  var rvr_22L = pattern_22L ? pattern_22L[1] : null;
+  var rvr_22R = pattern_22R ? pattern_22R[1] : null;
+
+  // RVR 04L
+  if (rvr_04L !== null) {
+    var randomRVR_04L = rvrRandomizator(rvr_04L);
+
+    document.getElementById('RVR_values_04L').style.display = "block";
+
+    document.getElementById("rvr_04L_1").textContent = randomRVR_04L[0];
+    document.getElementById("rvr_04L_2").textContent = randomRVR_04L[1];
+    document.getElementById("rvr_04L_3").textContent = randomRVR_04L[2];
+  } 
+
+  // RVR 04R
+  if (rvr_04R !== null) {
+    var randomRVR_04R = rvrRandomizator(rvr_04R);
+
+    document.getElementById('RVR_values_04R').style.display = "block";
+
+    document.getElementById("rvr_04R_1").textContent = randomRVR_04R[0];
+    document.getElementById("rvr_04R_2").textContent = randomRVR_04R[1];
+    document.getElementById("rvr_04R_3").textContent = randomRVR_04R[2];
+  } 
+
+  // RVR 15
+  if (rvr_15 !== null) {
+    var randomRVR_15 = rvrRandomizator(rvr_15);
+
+    document.getElementById('RVR_values_15').style.display = "block";
+
+    document.getElementById("rvr_15_1").textContent = randomRVR_15[0];
+    document.getElementById("rvr_15_2").textContent = randomRVR_15[1];
+    document.getElementById("rvr_15_3").textContent = randomRVR_15[2];
+  } 
+
+  // RVR 33
+  if (rvr_33 !== null) {
+    var randomRVR_33 = rvrRandomizator(rvr_33);
+
+    document.getElementById('RVR_values_15').style.display = "block";
+
+    document.getElementById("rvr_15_1").textContent = randomRVR_33[0];
+    document.getElementById("rvr_15_2").textContent = randomRVR_33[1];
+    document.getElementById("rvr_15_3").textContent = randomRVR_33[2];
+  } 
+
+  // RVR 22L
+  if (rvr_22L !== null) {
+    var randomRVR_22L = rvrRandomizator(rvr_22L);
+
+    document.getElementById('RVR_values_04R').style.display = "block";
+
+    document.getElementById("rvr_04R_1").textContent = randomRVR_22L[0];
+    document.getElementById("rvr_04R_2").textContent = randomRVR_22L[1];
+    document.getElementById("rvr_04R_3").textContent = randomRVR_22L[2];
+  } 
+
+  // RVR 22R
+  if (rvr_22R !== null) {
+    var randomRVR_22R = rvrRandomizator(rvr_22R);
+
+    document.getElementById('RVR_values_04L').style.display = "block";
+
+    document.getElementById("rvr_04L_1").textContent = randomRVR_22R[0];
+    document.getElementById("rvr_04L_2").textContent = randomRVR_22R[1];
+    document.getElementById("rvr_04L_3").textContent = randomRVR_22R[2];
+  } 
+
+
+  if (rvr_04L == null && rvr_22R == null) {
+    document.getElementById('RVR_values_04L').style.display = "none";
+  }
+  if (rvr_04R == null && rvr_22L == null) {
+    document.getElementById('RVR_values_04R').style.display = "none";
+  }
+  if (rvr_15 == null && rvr_33 == null) {
+    document.getElementById('RVR_values_15').style.display = "none";
+  }
+
+
+  // get ATIS
+  fetch('https://data.vatsim.net/v3/vatsim-data.json')
+  .then(response => response.json())
+  .then(data => {
+    for (let item of data.atis) {
+      if (item.callsign === "EDDB_ATIS") {
+        document.getElementById('atisID').innerHTML = item.atis_code;
+        document.getElementById('atisID2').innerHTML = item.atis_code;
+        var atisWithLines = item.text_atis.join(' ').split('.');
+        document.getElementById('atisInfoField').innerHTML = atisWithLines.join('<br>');
+        break;
+      }
+      else {
+        document.getElementById('atisID').innerHTML = "//";
+        document.getElementById('atisID2').innerHTML = "//";
+        document.getElementById('atisInfoField').innerHTML = "EFHK INFO NIL";
+      }
+    }
+  })
+  .catch(error => console.error('Error:', error));
+}
+
+function rvrRandomizator(realRVR) {
+  realRVR = Number(realRVR)
+  var minRVR = realRVR - 100;
+  var maxRVR = realRVR + 100;
+  var rvrValue1, rvrValue2, rvrValue3;
+
+  if (realRVR > 400 && realRVR < 1000) {
+    rvrValue1 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/50)*50);
+    rvrValue2 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/50)*50);
+    rvrValue3 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/50)*50);
+  }
+  else if (realRVR >= 1000) {
+    rvrValue1 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/100)*100);
+    rvrValue2 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/100)*100);
+    rvrValue3 = (Math.round((Math.floor(Math.random() * (maxRVR - minRVR)) + minRVR)/100)*100);
+  }
+  else {
+    rvrValue1 = realRVR;
+    rvrValue2 = realRVR;
+    rvrValue3 = realRVR;
+  }
+
+  return [rvrValue1, rvrValue2, rvrValue3];
 }
 
 function qnhClick() {

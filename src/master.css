@@ -50,6 +50,7 @@ span {
     border-radius: 3px;
     margin-right: 3px;
     text-align: center;
+    cursor: pointer;
 }
 .arr {
     background-color: #ff9600;
