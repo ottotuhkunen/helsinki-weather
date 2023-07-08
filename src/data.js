@@ -402,7 +402,7 @@ function setMetarData(xml) {
   .then(response => response.json())
   .then(data => {
     for (let item of data.atis) {
-      if (item.callsign === "EDDB_ATIS") {
+      if (item.callsign === "EFHK_ATIS") {
         document.getElementById('atisID').innerHTML = item.atis_code;
         document.getElementById('atisID2').innerHTML = item.atis_code;
         var atisWithLines = item.text_atis.join(' ').split('.');
