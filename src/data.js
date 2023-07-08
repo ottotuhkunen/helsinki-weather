@@ -255,7 +255,7 @@ function setMetarData(xml) {
   var metar = metars[metars.length-1].childNodes[0].nodeValue;
   document.getElementById("metar").innerHTML = metar;
 
-  //VARIABLE BETWEEN
+  // VARIABLE BETWEEN
   if (vrbWindcheck > 0) {
     var counterClockwises = xmlDoc.getElementsByTagName("iwxxm:extremeCounterClockwiseWindDirection");
     var clockwises = xmlDoc.getElementsByTagName("iwxxm:extremeClockwiseWindDirection");
@@ -274,7 +274,7 @@ function setMetarData(xml) {
     document.getElementById("04L_maxDir").innerHTML = counterClockwise + "-" + clockwise;
   }
 
-  //IF METAR CONTAINS VRB
+  // IF METAR CONTAINS VRB
   if (metar.includes("VRB")) {
     document.getElementById("22R_windDir").innerHTML = "VRB";
     document.getElementById("22L_windDir").innerHTML = "VRB";
@@ -294,7 +294,7 @@ function setMetarData(xml) {
   var viss = xmlDoc.getElementsByTagName("iwxxm:prevailingVisibility");
   var vis = viss[viss.length-1].childNodes[0].nodeValue;
 
-  //IMC VMC INDICATOR
+  // IMC VMC INDICATOR
   if (vis < 5000 && vis > 10 || metar.match(/\W*(BKN00)/g) || metar.match(/\W*(OVC00)/g) || metar.includes(" VV")){
     document.getElementById("imcVmc").innerHTML = "IMC";
   }
@@ -302,6 +302,8 @@ function setMetarData(xml) {
     document.getElementById("imcVmc").innerHTML = "VMC";
   }
 
+  // if METAR contains RVR
+  // todo
 }
 
 function qnhClick() {
