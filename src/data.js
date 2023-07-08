@@ -205,13 +205,15 @@ function getMaxSpeed(roundedGust, roundedWindSpeed, display, font1, font2) {
   return maxSpeed;
 }
 
-function randomWindDirection(realDirection, arrowID, maxDirID, windSpeed) {
+function randomWindDirection(realDirection, arrowID, maxDirID, windSpeed) { // 29.0
   var min = (realDirection - 10);
   var max = (realDirection + 10);
   var randomDirection = Math.floor(Math.random() * (max - min) + min);
 
   randomDirection = Math.round(randomDirection / 10) * 10;
   randomDirection = ((randomDirection % 360) + 360) % 360;
+
+  document.getElementById(arrowID).style.transform = `rotate(${(randomDirection + 180)}deg)`;
 
   var minimumRandomDirection = (randomDirection - 20);
   var maximumRandomDirection = (randomDirection + 20);
@@ -239,7 +241,7 @@ function randomWindDirection(realDirection, arrowID, maxDirID, windSpeed) {
   if (maximumRandomDirection < 100) {
     maximumRandomDirection = "0" + maximumRandomDirection;
   }
-  document.getElementById(arrowID).style.transform = `rotate(${(randomDirection + 180)}deg)`;
+  
   document.getElementById(maxDirID).innerHTML = minimumRandomDirection + "-" + maximumRandomDirection;
   return randomDirection;
 }
