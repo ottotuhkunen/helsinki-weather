@@ -278,33 +278,39 @@
                 </g>
             </svg>
             <div id="setupDiv" style="display: none;">
-                <h2>Runway combination</h2>
-                <button class="runwayButton" onclick="openV();"><strong>OPEN V</strong><br>DEP 22R<br>ARR 15</button>
-                <button class="runwayButton" onclick="openVQjet();"><strong>OPEN V QJET</strong><br>DEP 22R, 22L<br>ARR 15</button><br>
-                <button class="runwayButton" onclick="para22();"><strong>PARA 22</strong><br>DEP 22R<br>ARR 22L</button>
-                <button class="runwayButton" onclick="para22Qjet();"><strong>PARA 22 QJET</strong><br>DEP 22R, 22L<br>ARR 22L</button><br>
-                <button class="runwayButton" onclick="para04();"><strong>PARA 04</strong><br>DEP 04R<br>ARR 04L</button>
-                <button class="runwayButton" onclick="para04Prop();"><strong>PARA 04 PROP</strong><br>DEP 04R, 15<br>ARR 04L</button><br><br>
-                <button class="runwayButton" onclick="openT();"><strong>OPEN T (LVP)</strong><br>DEP 15<br>ARR 22R</button>
-                <button class="runwayButton" onclick="openA();"><strong>OPEN A (LVP)</strong><br>DEP 15<br>ARR 04L</button><br>
-                <button class="runwayButton" onclick="soir04();"><strong>SOIR 04</strong><br>DEP 04R<br>ARR 04L, 04R</button>
-                <button class="runwayButton" onclick="soir22();"><strong>SOIR 22</strong><br>DEP 22R<br>ARR 22L, 22R</button><br>
-                <h2>Manual selection</h2>
-                <h3>04L<input class="checkbox" type="checkbox" id="checkboxDep04L" name="checkboxDep04L" onclick="dep04L();">DEP<input class="checkbox" type="checkbox" id="checkboxArr04L" name="checkboxArr04L" onclick="arr04L();">ARR</h3>
-                <h3>04R<input class="checkbox" type="checkbox" id="checkboxDep04R" name="checkboxDep04R" onclick="dep04R()">DEP<input class="checkbox" type="checkbox" id="checkboxArr04R" name="checkboxArr04R" onclick="arr04R();">ARR</h3>
-                <h3>15&nbsp;&nbsp;<input class="checkbox" type="checkbox" id="checkboxDep15" name="checkboxDep15" onclick="dep15();">DEP<input class="checkbox" type="checkbox" id="checkboxArr15" name="checkboxArr15" onclick="arr15();">ARR</h3>
-                <h3>33&nbsp;&nbsp;<input class="checkbox" type="checkbox" id="checkboxDep33" name="checkboxDep33" onclick="dep33();">DEP<input class="checkbox" type="checkbox" id="checkboxArr33" name="checkboxArr33" onclick="arr33();">ARR</h3>
-                <h3>22L<input class="checkbox" type="checkbox" id="checkboxDep22L" name="checkboxDep22L" onclick="dep22L();">DEP<input class="checkbox" type="checkbox" id="checkboxArr22L" name="checkboxArr22L" onclick="arr22L();">ARR</h3>
-                <h3>22R<input class="checkbox" type="checkbox" id="checkboxDep22R" name="checkboxDep22R" onclick="dep22R();">DEP<input class="checkbox" type="checkbox" id="checkboxArr22R" name="checkboxArr22R" onclick="arr22R();">ARR</h3>
+                <div id="setupContainer1" style="width: 300px; position: absolute;">
+                    <h2>Runway combination</h2>
+                    <button class="runwayButton" onclick="openV();"><strong>OPEN V</strong><br>DEP 22R<br>ARR 15</button>
+                    <button class="runwayButton" onclick="openVQjet();"><strong>OPEN V QJET</strong><br>DEP 22R, 22L<br>ARR 15</button><br>
+                    <button class="runwayButton" onclick="para22();"><strong>PARA 22</strong><br>DEP 22R<br>ARR 22L</button>
+                    <button class="runwayButton" onclick="para22Qjet();"><strong>PARA 22 QJET</strong><br>DEP 22R, 22L<br>ARR 22L</button><br>
+                    <button class="runwayButton" onclick="para04();"><strong>PARA 04</strong><br>DEP 04R<br>ARR 04L</button>
+                    <button class="runwayButton" onclick="para04Prop();"><strong>PARA 04 PROP</strong><br>DEP 04R, 15<br>ARR 04L</button><br><br>
+                    <button class="runwayButton" onclick="openT();"><strong>OPEN T (LVP)</strong><br>DEP 15<br>ARR 22R</button>
+                    <button class="runwayButton" onclick="openA();"><strong>OPEN A (LVP)</strong><br>DEP 15<br>ARR 04L</button><br>
+                    <button class="runwayButton" onclick="soir04();"><strong>SOIR 04</strong><br>DEP 04R<br>ARR 04L, 04R</button>
+                    <button class="runwayButton" onclick="soir22();"><strong>SOIR 22</strong><br>DEP 22R<br>ARR 22L, 22R</button><br>
+                </div>
+                <div id="setupContainer2" style="width: 300px; position: absolute; left: 310px;">
+                    <h2>Manual selection</h2>
+                    <h3>04L<input class="checkbox" type="checkbox" id="checkboxDep04L" name="checkboxDep04L" onclick="dep04L();">DEP<input class="checkbox" type="checkbox" id="checkboxArr04L" name="checkboxArr04L" onclick="arr04L();">ARR</h3>
+                    <h3>04R<input class="checkbox" type="checkbox" id="checkboxDep04R" name="checkboxDep04R" onclick="dep04R()">DEP<input class="checkbox" type="checkbox" id="checkboxArr04R" name="checkboxArr04R" onclick="arr04R();">ARR</h3>
+                    <h3>15&nbsp;&nbsp;<input class="checkbox" type="checkbox" id="checkboxDep15" name="checkboxDep15" onclick="dep15();">DEP<input class="checkbox" type="checkbox" id="checkboxArr15" name="checkboxArr15" onclick="arr15();">ARR</h3>
+                    <h3>33&nbsp;&nbsp;<input class="checkbox" type="checkbox" id="checkboxDep33" name="checkboxDep33" onclick="dep33();">DEP<input class="checkbox" type="checkbox" id="checkboxArr33" name="checkboxArr33" onclick="arr33();">ARR</h3>
+                    <h3>22L<input class="checkbox" type="checkbox" id="checkboxDep22L" name="checkboxDep22L" onclick="dep22L();">DEP<input class="checkbox" type="checkbox" id="checkboxArr22L" name="checkboxArr22L" onclick="arr22L();">ARR</h3>
+                    <h3>22R<input class="checkbox" type="checkbox" id="checkboxDep22R" name="checkboxDep22R" onclick="dep22R();">DEP<input class="checkbox" type="checkbox" id="checkboxArr22R" name="checkboxArr22R" onclick="arr22R();">ARR</h3>
+                </div>
+                <div id="setupContainer3" style="position: absolute; top: 400px;">
+                    <p>Please, do <b>NOT</b> distribute this weather app to users not related to Vatsim Scandinavia.</p>
+                    <p>The link to this app may change from time to time - you will find this page from our Wiki site.</p><br>
+                    <p>This app is for simulation purposes only!
+                </div>
+                
                 <!--<h2>Runway availability</h2>
                 <button id="toggle_04R_22L" value="" class="runwayButton" onclick="close_04R_22L();"><strong>04R/22L</strong><br>OPEN</button>
                 <button id="toggle_15_33" value="" class="runwayButton" onclick="close_15_33();"><strong>15/33</strong><br>OPEN</button>
                 <button id="toggle_04L_22R" value="" class="runwayButton" style="margin-bottom: 100px;" onclick="close_04L_22R();"><strong>04L/22R</strong><br>OPEN</button>
                 -->
-                <br>
-                <p>Please, do <b>NOT</b> distribute this weather app to users not related to Vatsim Scandinavia.</p>
-                <p>The link to this app may change from time to time - you will find this page from our Wiki site.</p><br>
-                <p>This app is for simulation purposes only!</p><br><br><br><br><br>
             </div>
 
             <div id="atisDiv" style="display: none;">
