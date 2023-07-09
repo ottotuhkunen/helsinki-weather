@@ -65,7 +65,6 @@ function setData(xml) {
     var qnhChanger = JSON.parse(sessionStorage.efhkQnh);
     var roundedQnh = Math.floor(qnh);
     var roundedGust = Math.ceil(windGust * 1.943);
-    var maxGust = roundedGust + 3;
     var roundedWindSpeed = Math.round(windSpeed * 1.943);
 
     setTrl(roundedQnh);
@@ -138,12 +137,60 @@ function setData(xml) {
       document.getElementById("04L_maxDir").style.display = "block";
     }
 
-    document.getElementById("22R_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display22R", "22R_maxSpd", "22R_minSpd");
-    document.getElementById("22L_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display22L", "22L_maxSpd", "22L_minSpd");
-    document.getElementById("15_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display15", "15_maxSpd", "15_minSpd");
-    document.getElementById("33_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display33", "33_maxSpd", "33_minSpd");
-    document.getElementById("04L_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display04L", "04L_maxSpd", "04L_minSpd");
-    document.getElementById("04R_maxSpd").innerHTML = getMaxSpeed(roundedGust, roundedWindSpeed, "display04R", "04R_maxSpd", "04R_minSpd");
+    var displayedGust22R = getMaxSpeed(roundedGust, roundedWindSpeed, "display22R", "22R_maxSpd", "22R_minSpd");
+    var displayedGust22L = getMaxSpeed(roundedGust, roundedWindSpeed, "display22L", "22L_maxSpd", "22L_minSpd");
+    var displayedGust15 = getMaxSpeed(roundedGust, roundedWindSpeed, "display15", "15_maxSpd", "15_minSpd");
+    var displayedGust33 = getMaxSpeed(roundedGust, roundedWindSpeed, "display33", "33_maxSpd", "33_minSpd");
+    var displayedGust04L = getMaxSpeed(roundedGust, roundedWindSpeed, "display04L", "04L_maxSpd", "04L_minSpd");
+    var displayedGust04R = getMaxSpeed(roundedGust, roundedWindSpeed, "display04R", "04R_maxSpd", "04R_minSpd");
+
+    document.getElementById("22R_maxSpd").innerHTML = displayedGust22R;
+    document.getElementById("22L_maxSpd").innerHTML = displayedGust22L;
+    document.getElementById("15_maxSpd").innerHTML = displayedGust15;
+    document.getElementById("33_maxSpd").innerHTML = displayedGust33;
+    document.getElementById("04L_maxSpd").innerHTML = displayedGust04L;
+    document.getElementById("04R_maxSpd").innerHTML = displayedGust04R;
+
+    if (roundedGust > (roundedWindSpeed + 9)) {
+      if (JSON.parse(sessionStorage.getItem("depBox04L")) || JSON.parse(sessionStorage.getItem("arrBox04L"))) {
+        document.getElementById("04L_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("04L_maxSpd").style.fill = "#B9B8BA";
+      }
+      if (JSON.parse(sessionStorage.getItem("depBox04R")) || JSON.parse(sessionStorage.getItem("arrBox04R"))) {
+        document.getElementById("04R_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("04R_maxSpd").style.fill = "#B9B8BA";
+      }
+      if (JSON.parse(sessionStorage.getItem("depBox15")) || JSON.parse(sessionStorage.getItem("arrBox15"))) {
+        document.getElementById("15_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("15_maxSpd").style.fill = "#B9B8BA";
+      }
+      if (JSON.parse(sessionStorage.getItem("depBox33")) || JSON.parse(sessionStorage.getItem("arrBox33"))) {
+        document.getElementById("33_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("33_maxSpd").style.fill = "#B9B8BA";
+      }
+      if (JSON.parse(sessionStorage.getItem("depBox22L")) || JSON.parse(sessionStorage.getItem("arrBox22L"))) {
+        document.getElementById("22L_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("22L_maxSpd").style.fill = "#B9B8BA";
+      }
+      if (JSON.parse(sessionStorage.getItem("depBox22R")) || JSON.parse(sessionStorage.getItem("arrBox22R"))) {
+        document.getElementById("22R_maxSpd").style.fill = "black";
+      } else {
+        document.getElementById("22R_maxSpd").style.fill = "#B9B8BA";
+      }
+    } 
+    else {
+      document.getElementById("04L_maxSpd").style.fill = "#B9B8BA";
+      document.getElementById("04R_maxSpd").style.fill = "#B9B8BA";
+      document.getElementById("15_maxSpd").style.fill = "#B9B8BA";
+      document.getElementById("33_maxSpd").style.fill = "#B9B8BA";
+      document.getElementById("22L_maxSpd").style.fill = "#B9B8BA";
+      document.getElementById("22R_maxSpd").style.fill = "#B9B8BA";
+    }
 
     document.getElementById("22R_minSpd").innerHTML = getMinSpeed(roundedWindSpeed);
     document.getElementById("22L_minSpd").innerHTML = getMinSpeed(roundedWindSpeed);
@@ -243,6 +290,7 @@ function randomWindDirection(realDirection, arrowID, maxDirID, windSpeed) { // 2
   }
   
   document.getElementById(maxDirID).innerHTML = minimumRandomDirection + "-" + maximumRandomDirection;
+  
   return randomDirection;
 }
 
@@ -266,12 +314,59 @@ function setMetarData(xml) {
     counterClockwise = Math.round(counterClockwise);
     clockwise = Math.round(clockwise)
 
+    if (counterClockwise < 100) {
+      counterClockwise = "0" + counterClockwise
+    }
+    if (clockwise < 100) {
+      clockwise = "0" + clockwise
+    }
+
+    if (JSON.parse(sessionStorage.getItem("depBox04L")) || JSON.parse(sessionStorage.getItem("arrBox04L"))) {
+      document.getElementById("04L_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("04L_maxDir").style.fill = "#B9B8BA";
+    }
+    if (JSON.parse(sessionStorage.getItem("depBox04R")) || JSON.parse(sessionStorage.getItem("arrBox04R"))) {
+      document.getElementById("04R_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("04R_maxDir").style.fill = "#B9B8BA";
+    }
+    if (JSON.parse(sessionStorage.getItem("depBox15")) || JSON.parse(sessionStorage.getItem("arrBox15"))) {
+      document.getElementById("15_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("15_maxDir").style.fill = "#B9B8BA";
+    }
+    if (JSON.parse(sessionStorage.getItem("depBox33")) || JSON.parse(sessionStorage.getItem("arrBox33"))) {
+      document.getElementById("33_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("33_maxDir").style.fill = "#B9B8BA";
+    }
+    if (JSON.parse(sessionStorage.getItem("depBox22L")) || JSON.parse(sessionStorage.getItem("arrBox22L"))) {
+      document.getElementById("22L_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("22L_maxDir").style.fill = "#B9B8BA";
+    }
+    if (JSON.parse(sessionStorage.getItem("depBox22R")) || JSON.parse(sessionStorage.getItem("arrBox22R"))) {
+      document.getElementById("22R_maxDir").style.fill = "black";
+    } else {
+      document.getElementById("22R_maxDir").style.fill = "#B9B8BA";
+    }
+
     document.getElementById("22R_maxDir").innerHTML = counterClockwise + "-" + clockwise;
     document.getElementById("22L_maxDir").innerHTML = counterClockwise + "-" + clockwise;
     document.getElementById("15_maxDir").innerHTML = counterClockwise + "-" + clockwise;
     document.getElementById("33_maxDir").innerHTML = counterClockwise + "-" + clockwise;
     document.getElementById("04R_maxDir").innerHTML = counterClockwise + "-" + clockwise;
     document.getElementById("04L_maxDir").innerHTML = counterClockwise + "-" + clockwise;
+  }
+  // no METAR VRB between:
+  else {
+    document.getElementById("04L_maxDir").style.fill = "#B9B8BA";
+    document.getElementById("04R_maxDir").style.fill = "#B9B8BA";
+    document.getElementById("15_maxDir").style.fill = "#B9B8BA";
+    document.getElementById("33_maxDir").style.fill = "#B9B8BA";
+    document.getElementById("22L_maxDir").style.fill = "#B9B8BA";
+    document.getElementById("22R_maxDir").style.fill = "#B9B8BA";
   }
 
   // IF METAR CONTAINS VRB
